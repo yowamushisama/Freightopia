@@ -44,6 +44,14 @@ document.addEventListener("DOMContentLoaded", function() {
          <p>A reefer, or refrigerated trailer, is designed to transport perishable goods while maintaining a controlled temperature. Equipped with cooling systems, reefers ensure items like food and pharmaceuticals stay fresh and unspoiled during transit. They are essential for preserving the quality of temperature-sensitive cargo, making them indispensable in industries requiring precise temperature control for safe transportation.</p>
     `;
     reeferText.innerHTML = newContent;
+    reeferText.getElementsByTagName('h6')[0].style.opacity = '0'
+    reeferText.getElementsByTagName('p')[0].style.opacity = '0'
+    reeferText.getElementsByTagName('h6')[0].style.animation = 
+    'slideIn 2s forwards';
+    reeferText.getElementsByTagName('p')[0].style.animation = 
+    'slideIn 2s forwards';
+    reeferText.getElementsByTagName('p')[0].style.animationDelay = 
+    '0.4s';
     });
 });
 
@@ -59,6 +67,14 @@ document.addEventListener("DOMContentLoaded", function() {
          </p>
     `;
     dryVanText.innerHTML = newContent;
+    dryVanText.getElementsByTagName('h6')[0].style.opacity = '0'
+    dryVanText.getElementsByTagName('p')[0].style.opacity = '0'
+    dryVanText.getElementsByTagName('h6')[0].style.animation = 
+    'slideIn 2s forwards';
+    dryVanText.getElementsByTagName('p')[0].style.animation = 
+    'slideIn 2s forwards';
+    dryVanText.getElementsByTagName('p')[0].style.animationDelay = 
+    '0.4s';
    
     });
 });
@@ -74,7 +90,15 @@ document.addEventListener("DOMContentLoaded", function() {
         </p>
     `;
     FlatBedText.innerHTML = newContent;
-   
+    FlatBedText.getElementsByTagName('h6')[0].style.opacity = '0'
+    FlatBedText.getElementsByTagName('p')[0].style.opacity = '0'
+    FlatBedText.getElementsByTagName('h6')[0].style.animation = 
+    'slideIn 2s forwards';
+    FlatBedText.getElementsByTagName('p')[0].style.animation = 
+    'slideIn 2s forwards';
+    FlatBedText.getElementsByTagName('p')[0].style.animationDelay = 
+    '0.4s';
+      
     });
 });
 
@@ -90,7 +114,15 @@ document.addEventListener("DOMContentLoaded", function() {
      </p>
     `;
     ConestogaText.innerHTML = newContent;
-   
+    ConestogaText.getElementsByTagName('h6')[0].style.opacity = '0'
+    ConestogaText.getElementsByTagName('p')[0].style.opacity = '0'
+    ConestogaText.getElementsByTagName('h6')[0].style.animation = 
+    'slideIn 2s forwards';
+    ConestogaText.getElementsByTagName('p')[0].style.animation = 
+    'slideIn 2s forwards';
+    ConestogaText.getElementsByTagName('p')[0].style.animationDelay = 
+    '0.4s';
+    
     });
 });
 
