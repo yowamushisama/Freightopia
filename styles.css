@@ -562,7 +562,7 @@ h3{
     display: block;
    
 }
-#fourth-sectio .information .info-1 p{
+#fourth-section .information .info-1 p{
     font-size: 1rem;
     text-align: start;
     color: black;
@@ -614,12 +614,11 @@ h3{
     flex-direction:row;
     flex-wrap: wrap;
     margin-top: 1vw;
-
 }
 #fifth-section .plan-card{
     text-align: center;
    
-    margin-top: 1.5vw;
+    margin-top: 2vw;
   /* background-color: #e0e0e0;*/
 /*   background-color: #eae9e9;
    */
@@ -627,6 +626,11 @@ h3{
    padding: 0 2vw;
    border: 1px solid #9f9f9f;
    border-radius: 3px;
+   transition: all 0.3s ease;
+}
+#fifth-section .plan-card:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+   
 }
 #fifth-section .plan-card h6{
     font-size: 1.2rem;
@@ -640,6 +644,17 @@ h3{
     font-size: 1rem;
 }
 #fifth-section .plan-container .pricing-card_features object{
+    cursor: pointer;
+    width: 20px;
+    height: auto;
+
+}
+#fifth-section .plan-container .pricing-card_features img.svg-container-1{
+    cursor: pointer;
+    width: 20px;
+    height: auto;
+}
+#fifth-section .plan-container .pricing-card_features img.svg-container{
     cursor: pointer;
     width: 20px;
     height: auto;
@@ -725,7 +740,31 @@ h3{
     color: #E74C3C;
     font-weight: 400;
 }
-#fifth-section .svg-container{
-    cursor: pointer;
+
+#fifth-section .feature-item{
+    position: relative;
+    display: inline-block;
+}
+#fifth-section .info-text-1{ 
+    visibility: hidden;
+    opacity: 0;
+    width: 260px;
+   /* background-color: #1667ad;*/
+   background-color: #333333;
+    color: #fff;   
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.7vw;
+    position: absolute; 
+    top: 0;
+    left: 100%; 
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 2;
+    font-size: 0.9rem;
+}
+
+#fifth-section .svg-container-1:hover + .info-text-1{ 
+   visibility: visible;
+   opacity: 1;
 }
 /***** End Fifth Section *****/

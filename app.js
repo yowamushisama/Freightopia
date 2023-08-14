@@ -81,8 +81,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const FlatBedButton = document.querySelector("#Flat-Bed"); 
-    const FlatBedText= document.querySelector(".info-1")
+    const FlatBedText= document.querySelector(".info-1");
+    const ContentButton =document.querySelectorAll(".overlay-3");
+   
     FlatBedButton.addEventListener("click", function() {
+        ContentButton.style.backgroundColor = 'black';
         const newContent = 
         ` <object data="Images/dispatching-services.svg" type="image/svg+xml"></object>
         <h6>Flat Bed</h6>
