@@ -252,7 +252,7 @@ h3{
     transition: transform 0.3s ease-in,
     max-height 1s ease-in-out,display 0.5s ease;
     cursor: pointer; 
-    max-height: 150px;
+    /*max-height: 150px;*/
     overflow: hidden;
     
 }
@@ -270,11 +270,11 @@ h3{
 #second-section .card-base p{
     margin-top: 2px;
     font-size: 1rem;
-    display: none;   
+  
 }   
-#second-section .card-box:hover p{
+/*#second-section .card-box:hover p{
     display: block;   
-} 
+} */
 #second-section .card-base img{
     width: 50px;
     height: auto;
@@ -377,6 +377,7 @@ h3{
     font-size: 1.3rem;
     font-weight: 500;
     margin: 0;
+    color: white;
 }
 
 #third-section .overlay-2 p {
@@ -627,10 +628,11 @@ h3{
    border: 1px solid #9f9f9f;
    border-radius: 3px;
    transition: all 0.3s ease;
+   margin-bottom: 2vw;
 }
 #fifth-section .plan-card:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-   
+    transform: translateY(-2vw);  
 }
 #fifth-section .plan-card h6{
     font-size: 1.2rem;
@@ -768,3 +770,189 @@ h3{
    opacity: 1;
 }
 /***** End Fifth Section *****/
+
+/***** Sixth Section *****/
+
+#sixth-section{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    background-color: #f0f0f0;
+    color: black;
+    height: 100vh;
+    overflow: scroll;
+}
+#sixth-section .title{
+    
+    margin: 2rem auto;
+    margin-bottom: 0.5vw;
+
+}
+#sixth-section p.opening-para{
+    text-align: center;
+    width: 60%;
+    padding: 0.5vw;
+    margin-bottom: 0.5vw;
+    color: black;
+  
+}
+#sixth-section .faq{
+    margin: 1rem;
+   
+    padding-bottom:1rem;
+    border-bottom:2px solid black;
+    width: 60%;
+    cursor:pointer;
+}
+#sixth-section .question{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:3px ;
+    align-items: center;
+    padding: 0.5vw;
+}
+#sixth-section .question h3{
+    font-size: 1.4rem;
+}
+#sixth-section .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+#sixth-section .answer p{
+    padding-top: 0.5rem;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    color: black;
+    width: 100%;
+    letter-spacing: 1.2px;
+}
+#sixth-section svg{
+    transition: transform 0.5s ease-in-out  ;
+}
+#sixth-section .faq.active  .answer{
+    max-height:300px ;
+    animation: fade-2 1s ease;
+}
+.faq.active svg{
+    transform: rotate(180deg);
+}
+@keyframes fade-2{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/***** End Sixth Section *****/
+
+/***** Seventh Section *****/
+#seventh-section {
+    background: linear-gradient(to right, #614B8E, #6C3483);
+   
+    animation: gradientRotation 10s linear infinite;    
+    color: white;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#seventh-section .contact-container h4{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+#seventh-section .contact-container h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 0.5vw;
+    margin-bottom: 1.2vw;
+}
+#seventh-section .contact-container a{
+    text-decoration: none;
+    color: white;
+    padding: 1vw 2vw;
+    border: 2px solid #FF6B6B;
+    border-radius: 1px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+#seventh-section .contact-container a:hover{
+    background-color: white;
+    color: #FF6B6B;
+    border: 2px solid white;
+}
+
+
+/***** End Section *****/
+
+/***** Footer Section *****/
+footer{
+    background-color: #101C32; 
+   
+}
+footer .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 5vw; 
+    padding-bottom: 0;  
+}
+
+footer h5{
+    font-weight: 600;
+    color: white;
+    font-size: 1.2rem;
+}
+footer p{
+    font-size: 1.2rem;
+    padding: 1vw 0;
+    color: #7b838a;
+}
+footer .footer-container .footer-section li{
+    list-style: none;
+    color: #7b838a;
+    padding: 0.7vw 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+footer .footer-container .footer-section li a{
+    text-decoration: none;
+    color: #7b838a;
+    transition: color 0.3s ease;
+}
+footer .footer-container .footer-section li a:hover{
+    color: #fff;
+}
+footer .footer-container .footer-section img{
+    width: 150px;
+}
+#footer .footer-container .footer-section .social-media{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+   
+}
+.footer-section .social-media i{
+    padding: 1vw 2vw;
+/*   color: #891919;*/
+color: #fff;
+transition: color 0.3s ease;
+}
+.footer-section .social-media i:hover{
+    cursor: pointer;
+    color: rgb(220, 160, 160);
+}
+footer .footer-container .footer-bottom{
+   margin-top: 1vw;
+   padding: 0vw 2vw;
+   margin: 0 auto; 
+}
+/***** End Footer Section *****/

@@ -129,3 +129,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+//FAQ ACCORDIAN
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach(faq =>{
+    faq.addEventListener("click",() =>{
+        console.log(faqs);
+        faq.classList.toggle("active");
+    })
+})
