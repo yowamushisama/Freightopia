@@ -1,4 +1,19 @@
-
+//Navbar
+const checkBox = document.querySelector("#check");
+var navContainer = document.querySelector("ul");
+checkBox.addEventListener("click",function(){
+    let barIcon = document.querySelector(".fa-bars");
+    if(checkBox.checked == true){
+        navContainer.style.left = "0";
+        navContainer.style.background = "linear-gradient(to right, #3a7a9f, #6a3f6a)";
+        navContainer.style.opacity = "1";
+        barIcon.style.zIndex = "1000";
+    } else {
+        navContainer.style.left = "-100%";
+        navContainer.style.backgroundColor = "null";
+        barIcon.style.zIndex = "0";
+    }
+})
 //Second Section 
 const observerSecond = new IntersectionObserver((entries) =>{
     entries.forEach((entry) =>{
