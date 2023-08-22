@@ -1,6 +1,7 @@
 //Navbar
 const checkBox = document.querySelector("#check");
 var navContainer = document.querySelector("ul");
+const overflow = document.querySelector("body");
 checkBox.addEventListener("click",function(){
     let barIcon = document.querySelector(".fa-bars");
     if(checkBox.checked == true){
@@ -8,10 +9,13 @@ checkBox.addEventListener("click",function(){
         navContainer.style.background = "linear-gradient(to right, #3a7a9f, #6a3f6a)";
         navContainer.style.opacity = "1";
         barIcon.style.zIndex = "1000";
+        overflow.style.overflow = "hidden";
     } else {
         navContainer.style.left = "-100%";
         navContainer.style.backgroundColor = "null";
         barIcon.style.zIndex = "0";
+        overflow.style.overflow = "visible";
+        overflow.style.overflowX = "hidden";
     }
 })
 //Second Section 
@@ -97,10 +101,9 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     const FlatBedButton = document.querySelector("#Flat-Bed"); 
     const FlatBedText= document.querySelector(".info-1");
-    const ContentButton =document.querySelectorAll(".overlay-3");
-   
+    
     FlatBedButton.addEventListener("click", function() {
-        ContentButton.style.backgroundColor = 'black';
+       
         const newContent = 
         ` <object data="Images/dispatching-services.svg" type="image/svg+xml"></object>
         <h6>Flat Bed</h6>
